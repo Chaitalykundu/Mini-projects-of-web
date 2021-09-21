@@ -1,0 +1,32 @@
+.container{
+    text-align: center;  /* heading will be in centre */
+    margin : 30px;
+}
+
+table{
+    margin : auto;      /* table will be in centre */
+
+}
+
+input{
+    font-size: 25px;
+    background-color: rgb(219, 253, 253);
+    border-radius: 21px;    /* help in shaping curved */
+
+}
+
+button{
+    height : 50px;
+    width: 75px;
+    font-size : 25px;
+    background-color: rgb(212, 211, 212);
+    border-radius: 15px;   /* help in shaping curved */
+}
+
+.calculator{
+    display : inline-block;
+    background-color: rgb(161, 183, 231);
+    border: 60px;
+    padding: 10px;
+    border-radius: 25px;
+}
