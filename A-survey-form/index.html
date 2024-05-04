@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A survey form</title>
+
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <h1>
+        <center>Survey Form</center>
+      </h1>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <form class="survey-form">
+        <h1 align="center">Application For Permission To Date</h1>
+        <p>
+          <b>Note:</b> Form is to be completed at least 21 days prior to date
+        </p>
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend><strong>Personal Details</strong></legend>
+          <!-- Name -->
+
+          <div>
+            <label id="nameid" for="name">Name : </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label id="emailid" for="email">Email : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Contact no -->
+          <div>
+            <label id="contactid" for="contact">Contact No : </label>
+            <input
+              type="number"
+              name="contact"
+              id="contact"
+              placeholder="Enter your 10 digit contact no"
+              required
+            />
+          </div>
+
+          <!-- Gender -->
+          <div>
+            <label for="Gender">Gender : </label> <br />
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              checked
+            />Female<br />
+            <input type="radio" name="gender" value="male" checked />Male<br />
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              checked
+            />Other<br />
+          </div>
+
+          <!-- Date of birth -->
+          <div>
+            <label id="dobid" for="DOB">Date of Birth : </label>
+            <input type="date" id="DOB"> <br>
+          </div>
+          <!-- Address -->
+          <div>
+
+          </div>
+            <label for="address">Address : </label>
+            <textarea
+              name="address"
+              id="address"
+              placeholder="Enter your address"
+              required
+              rows="5" cols="30"
+            >
+            </textarea>
+          </div>
+        </fieldset>
+<br>
+        <!-- 2nd field -->
+        <fieldset>
+          <p>Check All That Apply</p>
+          <input type="checkbox" name="tatoo" value="tatoo">I have tattoos and/or piercings<br>
+          <input type="checkbox" name="year" value="year">I am more than 2 years older than my daughter<br>
+          <input type="checkbox" name="van" value="van">I own a panel van or V8 ute<br>
+          <input type="checkbox" name="work" value="fte">I work full-time<br>
+          <input type="checkbox" name="parents" value="rich">My parents are rich<br>
+          <input type="checkbox" name="date" value="location">Is the date at a well lit public location<br>
+        </fieldset>
+        <br>
+
+        <!-- 3rd field -->
+        <fieldset>
+          <!-- Politics -->
+          <label for="politics">Political Persuasion : </label>
+          <select id="dropdown1">
+            <option value="Select">Select one</option>
+            <option value="LeftWing">Left Wing</option>
+            <option value="RightWing">Right Wing</option>
+            <option value="Conservation">Conservation</option>
+            <option value="Nazi">Nazi</option>
+            </select>
+
+          <!-- Education Level Completed: -->
+          <label for="Education">Education Level Completed:</label>
+          <select id="dropdown2">
+            <option value="Select">Select one</option>
+            <option value="University">University</option>
+            <option value="College">College</option>
+            <option value="HighSchool">High School</option>
+            <option value="None">None</option>
+          </select>
+        </fieldset>
+
+        <br>
+        <!-- Essay Section -->
+        <fieldset>
+          <legend><strong>Essay Section</strong></legend>
+            <div>
+              <label for="essay">In 50 words or more explain why you want to date my daughter  </label> <br>
+              <br>
+              <textarea name="essay" id="essay" rows="5" cols="40" placeholder="Enter text here"></textarea>
+            </div>
+            <br>
+            <div>
+              <label for="contactDetails" >Please upload contact details for 2 references</label><br><br>
+              <textarea name="contactDetails" id="contactDetails" rows="5" cols="40" placeholder="Enter text here"></textarea>
+            </div>
+
+            <!-- Attach files -->
+            <p>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here: 
+              <label for="myfile"></label>
+              <input type="file" id="myfile" name="myfile">
+          </p>
+          </fieldset>
+
+        <!-- Submit button -->
+        <div id="submitButton" align="center">
+          <button type="submit" value="Submit"><strong>Submit Your Application</strong></button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
